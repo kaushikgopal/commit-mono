@@ -1,0 +1,57 @@
+# Commit Mono custom build configuration (used by `make build`)
+#
+# Supported customizations correspond to the website "Customize" section:
+# - letter spacing (letter_spacing)
+# - line height (line_height)
+# - features ss01..ss05 (features list)
+# - alternates cv01..cv11 (alternates list)
+# - custom name suffix (suffix)
+
+# Suffix appended to the font family name: "CommitMono-<suffix>"
+suffix: KG
+
+# Generate a "design" set of cuts (equivalent to website "Download custom for design"),
+# without variable fonts: 200..700 in steps of 25, Regular + Italic.
+weight_min: 200
+weight_max: 700
+weight_step: 25
+
+# Tracking in percent (-10..10). Does not change letter width, only spacing.
+letter_spacing: 0
+
+# Line height multiplier (0.9..1.8). Affects font vertical metrics.
+line_height: 1
+
+# Enabled OpenType features to bake into the output fonts.
+# Available:
+# ss01: Ligatures <= != ===
+# ss02: Arrows >-> =>
+# ss03: Smart case (1:1) 2+3
+# ss04: Symbol spacing ... <<
+# ss05: Smart kerning (immi)
+
+features:
+    - ss01
+    - ss02
+
+# Enabled alternate characters to bake into the output fonts.
+# Available: cv01..cv11
+# cv01: Alt. 'a'
+# cv02: Alt. 'g'
+# cv03: Square dots .:ij
+# cv04: Alt. 'i'
+# cv05: Standard @
+# cv06: Alt. '6', '9'
+# cv07: Dotted 0
+# cv08: Alt. italic 'aefgy'
+# cv09: Lifted *
+# cv10: Alt. l
+# cv11: Alt. 1
+
+alternates:
+    - cv02
+    - cv03
+    - cv04
+    - cv06
+    - cv07
+    - cv11

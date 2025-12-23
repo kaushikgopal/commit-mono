@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 bun.lockb
+fonts
 
 # Editor directories and files
 .vscode/*
